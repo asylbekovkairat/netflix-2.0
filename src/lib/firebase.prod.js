@@ -16,7 +16,8 @@ const config = {
   appId: "1:193541802613:web:318d609362291d4f3f463c",
 };
 
-const app = firebase.initializeApp(config);
+const Firebase = firebase.initializeApp(config);
+// export const auth = Firebase.auth();
 // seedDatabase(app)
 
-export { app };
+export { Firebase };

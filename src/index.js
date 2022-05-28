@@ -4,16 +4,16 @@ import App from "./app";
 import "normalize.css";
 import reportWebVitals from "./reportWebVitals";
 import { GlobalStyles } from "./global-styles";
-import { app } from "./lib/firebase.prod";
+import { Firebase } from "./lib/firebase.prod";
 import { FirebaseContext } from "./context/firebase";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
-    <FirebaseContext.provider value={{ app }}>
+    <FirebaseContext.Provider value={{ Firebase }}>
       <GlobalStyles />
       <App />
-    </FirebaseContext.provider>
+    </FirebaseContext.Provider>
   </>
 );
 
