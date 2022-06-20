@@ -16,6 +16,7 @@ import {
   Profile,
   FeatureCallOut,
   Link,
+  PlayButton,
 } from "./styles/header";
 
 export default function Header({ bg = true, children, ...restProps }) {
@@ -67,6 +68,10 @@ Header.Feature = function HeaderFeature({ children, ...restProps }) {
 Header.Frame = function HeaderFrame({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
 };
+
+Header.PlayButton = function HeaderPlayButton({children, ...restProps}){
+  return <PlayButton {...restProps}>{children}</PlayButton>
+}
 
 Header.Group = function HeaderGroup({ children, ...restProps }) {
   return <Group {...restProps}>{children}</Group>;
