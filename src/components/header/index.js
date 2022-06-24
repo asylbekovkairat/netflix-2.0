@@ -20,7 +20,7 @@ import {
 } from "./styles/header";
 
 export default function Header({ bg = true, children, ...restProps }) {
-  return bg ? <Background {...restProps}>{children}</Background> : children;
+  return bg ? <Background data-testid="header-bg" {...restProps}>{children}</Background> : children;
 }
 
 Header.Search = function HeaderSearch({
