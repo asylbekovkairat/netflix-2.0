@@ -1,4 +1,4 @@
-// import "firebase/firestore"
+import "firebase/firestore"
 
 export function seedDatabase(firebase) {
   function getUUID() {
